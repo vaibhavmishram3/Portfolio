@@ -1,0 +1,364 @@
+/*header Section*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poopins', sans-serif;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    height: 80px;
+    background-color: rgb(5, 5, 59);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(134, 134, 218);
+    font-size: 1.02rem;
+    cursor: pointer;
+}
+
+.left {
+    font-size: 1.8rem;
+}
+
+/*main */
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+/*main firstSection*/
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 0;
+    align-items: center;
+}
+
+.firstSection>div {
+    width: 27%;
+}
+
+.firstSection .purple {
+    color: rgb(177, 58, 177);
+}
+
+.firstSection .leftSection {
+    font-size: 3rem;
+
+}
+
+.firstSection .leftSection .buttons {
+    padding: 50px 0;
+}
+
+.firstSection .leftSection .btn {
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.firstSection .leftSection .buttons a .btn:hover {
+    color: rgb(134, 134, 218);
+}
+
+.firstSection .rightSection img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+#element {
+    color: rgb(177, 58, 177);
+}
+
+/*main secondSection*/
+.secondSection {
+    margin: 90px 0;
+}
+
+.secondSection h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.secondSection h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 158px;
+    background-color: #2ecc71;
+}
+
+.secondSection .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 2rem 100px;
+    font-size: 1.rem;
+}
+
+.secondSection .container .skill-box {
+    padding: 1rem;
+    color: #ddd;
+}
+
+.secondSection .container .skill-box .skill-tital {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.secondSection .container .skill-box .skill-tital h3 {
+    margin: 10px 0 0 0;
+}
+
+.secondSection .container .skill-box .skill-tital .img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondSection .container .skill-box .skill-tital .img .skill-icon {
+    width: 50px;
+}
+
+/*main projectSection */
+.projectSection {
+    margin: 70px 100px;
+}
+.projectSection h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem;
+    position: relative;
+    margin: 33px 0;
+}
+
+.projectSection h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 200px;
+    background-color: #2ecc71;
+}
+
+.projectSection .img {
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projectSection .img-text img {
+    box-shadow: 7px 7px 10px rgb(177, 58, 177);
+    border-radius: 10px;
+    width: 300px;
+}
+
+.projectSection .img .img-text {
+    height: 420px;
+    margin: 0 30px;
+}
+
+.projectSection .img .img-text h4 {
+    width: 300px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.projectSection .img .img-text p {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+}
+
+.projectSection .img .img-text .button {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.projectSection .img .img-text .button button {
+    font: menu;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background: blueviolet;
+    padding: 3px 20px;
+    cursor: pointer;
+}
+
+.projectSection .img .img-text .button button:hover {
+    box-shadow: 5px 5px 5px violet;
+    font-size: 12.5px;
+}
+
+/*main contactSection*/
+.contactSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 140px;
+    align-items: center;
+}
+
+.contactSection h1 {
+    margin: 0 0 13px -2px;
+    font-weight: 100;
+    font-size: 1.9rem;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.contactSection .left-Section .input {
+    display: grid;
+    margin: 30px 0px 0px 0px
+}
+
+.contactSection .left-Section .input .text {
+    font-family: sans-serif;
+    border: none;
+    margin: 0px 0px 12px 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+}
+
+.contactSection .left-Section .submit {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    background-color: #e93030;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 390px 0px 0px;
+    cursor: pointer;
+}
+
+.contactSection .left-Section .submit:hover {
+    font-size: 19px;
+}
+
+.contactSection .right-Section {
+    width: 276px;
+}
+
+.contactSection .right-Section .contact {
+    margin: 22px 0;
+}
+
+.contactSection .right-Section .logo-img {
+    width: 20px;
+    background: ;
+}
+
+.contactSection .right-Section .logo-img  img{
+    border-radius: 100%;
+}
+.contactSection .right-Section a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.contactSection .right-Section a:hover {
+    color: rgb(134, 134, 218);
+}
+
+.contactSection .right-Section .contact {
+    cursor: pointer;
+}
+
+/*footer */
+footer {
+    background-color: #0e0e1a;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    margin: 0 0 12px;
+}
+
+.footer>div {
+    width: 188px;
+}
+
+.footer .footer-first {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.footer .li-first {
+    font-weight: bold;
+    margin: 0 -20px 22px 0;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+.footer div ul li {
+    cursor: pointer;
+}
+
+.footer div ul li:hover {
+    color: rgb(134, 134, 218);
+}
